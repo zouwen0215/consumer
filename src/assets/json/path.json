@@ -1,0 +1,137 @@
+{
+	"menu": [
+		{
+			"id": 1000,
+			"title": "全选",
+			"children": [
+				{
+					"id": 999,
+					"children": [
+						{
+							"id": 1,
+							"children": [],
+							"title": "首页",
+							"href": "/dashboard"
+						}, {
+							"id": 2,
+							"children": [
+								{
+									"id": 21,
+									"children": [],
+									"title": "实物商品",
+									"href": "/shopsList"
+								}
+							],
+							"title": "商品管理"
+						}, {
+							"id": 3,
+							"children": [],
+							"title": "订单管理",
+							"href": "/orderManage"
+						}, {
+							"id": 4,
+							"children": [],
+							"title": "会员管理",
+							"href": "/memberManage"
+						}, 
+						{
+							"id": 5,
+							"children": [
+								{
+									"id": 51,
+									"children": [],
+									"title": "积分统计",
+									"href": "/scoreStatistics"
+								}, {
+									"id": 52,
+									"children": [],
+									"title": "积分明细",
+									"href": "/scoreDetails"
+								}, {
+									"id": 53,
+									"children": [],
+									"title": "商品统计",
+									"href": "/goodsStatistics"
+								}, {
+									"id": 54,
+									"children": [],
+									"title": "会员统计",
+									"href": "/memberStatistics"
+								}
+							],
+							"title": "统计中心"
+						},
+						
+						{
+							"id": 6,
+							"children": [],
+							"title": "活动管理",
+							"href": "/activitiesManage"
+						}, {
+							"id": 7,
+							"children": [],
+							"title": "积分规则设置",
+							"href": "/setscoreRulesSet"
+						}, {
+							"id": 8,
+							"children": [
+								{
+									"id": 81,
+									"children": [],
+									"title": "banner设置",
+									"href": "/bannerSet"
+								}, {
+									"id": 82,
+									"children": [],
+									"title": "分享图设置",
+									"href": "/shareSet"
+								}, {
+									"id": 83,
+									"children": [],
+									"title": "转发图设置",
+									"href": "/transmitSet"
+								}, {
+									"id": 84,
+									"children": [],
+									"title": "公告设置",
+									"href": "/noticeSet"
+								}, {
+									"id": 85,
+									"children": [],
+									"title": "积分规则展示",
+									"href": "/scoreruleShow"
+								}
+							],
+							"title": "商城布局"
+						}, {
+							"id": 9,
+							"children": [],
+							"title": "台卡设置",
+							"href": "/tabelCard"
+						},
+						{
+							"id": 10,
+							"children": [
+								{
+									"id": 101,
+									"children": [],
+									"title": "账号权限",
+									"href": "/userPrivilege"	
+								},
+								{
+									"id":102,
+									"children": [],
+									"title": "角色",
+									"href": "/roleList"
+								}
+							],
+							"title": "账号权限",
+				            "limit":[20]
+						}
+					],
+					"title": "消费者积分商城"
+				}
+			]
+		}
+	]
+}

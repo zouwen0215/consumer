@@ -1,0 +1,48 @@
+.el-table th{background:#fff !important;text-align: center; color: #000;font-weight: 600;font-size: 12px; padding: 5px 0;}
+
+.el-table--border td, .el-table--border th{    }
+
+.el-input__inner {height:30px;line-height: 30px;}
+.el-cascader ,.el-form-item__label,.el-input,.el-form-item__content,.el-input__icon,.el-input__icon{line-height: 30px;}
+
+.el-button,.el-radio-button__inner{padding: 7px 20px;}
+.color-red{color: #f00;}
+.color-green{color: limegreen;}
+
+.el-dialog--center .el-dialog__body {text-align: center; }
+.el-table__row.isClose-row {background: rgba(245,247,250,1) ;}
+.point .el-form-item__label{width: 150px !important;}
+
+.el-loading-mask {
+  position: absolute;
+  z-index: 10000;
+  background-color: rgba(255, 255, 255, .9);
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity .3s
+}
+.el-date-editor .el-range-separator {
+    padding: 0 5px;
+    line-height: 25px;
+    width: 15%;
+    color: #303133;
+}
+.el-date-editor .el-range__icon{
+	line-height: 25px;
+}
+
+
+
+.el-input,.el-select{
+  width: 150px;
+}
+
+.el-table th{
+	border-right: none;
+  background-color: #02af81 !important;
+  color: #FFFFFF;
+  font-size: 14px;
+}

@@ -1,0 +1,369 @@
+/*
+@Author: sunxingheng
+*/
+
+
+/* 禁用iPhone中Safari的字号自动调整 */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+*{box-sizing: border-box;}
+html,body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, th, td { margin:0; padding:0; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+address, cite, dfn, em, var { font-style:normal; } 
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol { list-style:none; } 
+a { text-decoration:none;}
+a:hover { text-decoration:underline; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+button, input, select, textarea { font-size:100%; } 
+table { border-collapse:collapse; border-spacing:0; } 
+.el-table th{background:#8CC5FF !important;font-size: large;text-align: center; color: #fff;}
+.el-table td{text-align: center; }
+html,body{height: 100%;}
+::-webkit-input-placeholder { color:#e6e6e6;}
+:-moz-placeholder { color:#e6e6e6;}
+::-moz-placeholder { color:#e6e6e6;}
+:-ms-input-placeholder { color:#e6e6e6;}
+
+/* 去除iPhone中默认的input样式 */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input,
+button {
+	/* -webkit-appearance:none; */
+	resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+button {
+	border: none;
+}
+
+
+/* 设置HTML5元素为块 */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+
+/* 图片自适应 */
+
+img {
+	/*max-width: 100%;*/
+	height: auto;
+	width: auto\9;
+	/* ie8 */
+	-ms-interpolation-mode: bicubic;
+	/*为了照顾ie图片缩放失真*/
+}
+
+
+/* 初始化 */
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*取消链接高亮*/
+}
+
+body {
+	font-family: Microsoft YaHei, simhei, Tahoma, Arial, sans-serif;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+em,
+i {
+	font-style: normal;
+}
+
+strong {
+	font-weight: normal;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+a {
+	text-decoration: none;
+	font-family: Microsoft YaHei, Tahoma, Arial, sans-serif;
+}
+
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-family: Microsoft YaHei;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+body,
+html {
+	width: 100%;
+	/*min-height: 700px;*/
+	margin: 0 auto;
+	font-family: Microsoft YaHei;
+	position: relative;
+	-ms-overflow-x: hidden;
+	overflow-x: hidden;
+}
+.el-tabs__item {
+		   font-size: 16px;
+		}
+
+/* .el-input{
+	margin: 0 5px 10px 0;
+
+} */
+.el-input.is-disabled .el-input__inner {
+		background-color: #f5f7fa;
+		border-color: #e4e7ed;
+		color: #717171;
+		cursor: not-allowed;
+	}
+	
+.el-radio__input.is-disabled .el-radio__inner, .el-radio__input.is-disabled.is-checked .el-radio__inner {
+    background-color: #f5f7fa;
+    border-color: #717171;
+}
+.el-radio__input.is-disabled+span.el-radio__label {
+    color: #717171;
+    cursor: not-allowed;
+
+}
+ .el-table th.gutter{
+    display: table-cell!important;
+
+}
+.el-radio-button__orig-radio:checked+.el-radio-button__inner {
+	color: #fff;
+	background-color: #34c388;
+	border-color: #34c388;
+	-webkit-box-shadow: -1px 0 0 0 #34c388;
+	box-shadow: -1px 0 0 0 #34c388;
+}
+   .el-radio-button__inner:hover {
+	color: #34C388;
+} 
+.el-radio__inner {
+	background-color: #f5f7fa;
+    	border: 1px solid #717171;
+    	}
+   	.el-dialog__title{
+    	font-weight: bold;
+    }
+    .el-scrollbar__thumb {
+    	background-color: #999999;
+    }
+	.el-radio__inner{
+		width: 20px;
+		height: 20px;
+	}
+
+
+	.el-table .warning-row {
+		background: rgba(242,58,58, .1);
+	  }
+	  
+.el-message{
+	top: 100px;
+}
+
+.el-button--danger.is-plain:focus, .el-button--danger.is-plain:hover {
+       color: #f56c6c;
+    background: #fef0f0;
+    border-color: #fbc4c4;
+}
+
+.addBanner .el-dialog {
+		height: 800px;
+	}
+.el-button--primary{
+	background-color: #02af81;
+	border-color:#02af81;
+}
+.el-button--primary:hover{
+	background-color: #02bf8d;
+	border-color:#02bf8d;
+}
+.el-button--primary:focus:focus{
+	background-color: #02a378;
+	border-color: #02a378;
+}
+.el-button--success{
+	background-color: #0d91f3;
+	border-color:#0d91f3;
+}
+.el-button--success:hover{
+	background-color:#0d91f3;
+	border-color:#0d91f3;
+}
+.el-button--success:focus:focus{
+	background-color: #0d91f3;
+	border-color: #0d91f3;
+}
+
+.el-dialog__title{
+	display: flex;
+	color: #02af81;
+	font-size: 16px;
+}
+.el-dialog__header{
+	border-bottom: 1px solid #CCCCCC;
+	padding: 10px 10px 10px !important; }
+
+.el-dialog {
+	 margin-top: 18vh !important; 
+
+	
+		}
+.el-dialog__body{
+	padding-bottom: 15px  !important; 
+}
+.el-dialog__headerbtn{
+	top: 15px;
+}
+.el-dialog__headerbtn .el-dialog__close:hover{
+	color: red  !important; 
+	opacity: 0.7;
+	
+}
+.el-tabs__item.is-active{
+	padding-top: 5px;
+	padding-bottom: 3px;
+	color: #02af81 !important;
+}
+.el-tabs__item:hover{
+	padding-top: 5px;
+	padding-bottom: 3px;
+	color: #02af81;
+}
+.el-tabs__active-bar{
+	background-color: #02af81;
+	
+}
+.el-tabs--top .el-tabs__item.is-top:nth-child(2){
+	padding-left: 10px;
+}
+.searchText{
+	 cursor: pointer;
+	color:#ffa900;
+}
+.editText{
+	 cursor: pointer;
+	color:#0063f7;
+}
+.deleteText{
+	 cursor: pointer;
+	color:#fd5566;
+}
+.el-form-item__error{
+	position: relative;
+}
+.el-form-item__label{
+	font-size: 12px;
+}
+.el-switch__label *{
+	font-size: 12px;
+}
+.el-menu-item .menu-item{
+	margin-left: 20px;
+}
+.el-dialog__wrapper{
+	width: 105%;
+}
